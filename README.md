@@ -1,2 +1,2 @@
-# IJMJ
+# IJ
 Ichigojam+MixJuice Things
