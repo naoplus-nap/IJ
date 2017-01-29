@@ -3,10 +3,12 @@ NEW
 
 ?"MJ GET tagiyasoft.blog.jp/invader1.bin"
 
+WAIT 300
 RUN
 NEW
 
 ? "MJ GET tagiyasoft.blog.jp/invader2.bin"
 
+WAIT 300
 CLS
 RUN
