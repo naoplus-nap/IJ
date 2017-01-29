@@ -1,0 +1,56 @@
+<html>
+<title>Asembler for IchigoJam</title>
+<script src="asm15_example.js"></script>
+<script src="asm15.js"></script>
+<body>
+Asembler for IchigoJam
+<form id="form1">
+<h3>SRC</h3>
+<div>
+<select name="selex" id="selex" onchange="example();">
+				<option value="">Select Example</option>
+
+				<option value="LOOP">LOOP</option>
+				<option value="PEEKPOKE">PEEK POKE</option>
+				<option value="BYTE_WORD_LONG">BYTE WORD LONG</option>
+				<option value="LED">LED</option>
+				<option value="GOSUB">GOSUB</option>
+				<option value="RET">RET</option>
+
+</select>
+</div>
+<div>
+
+<textarea id="textarea1" style="width:30em;height:15em;">
+
+'http://fukuno.jig.jp/1186 より
+R1=0
+@LOOP
+R1=R1+R0
+R0-=1
+IF !0 GOTO @LOOP
+'(計算結果が0でなければ2つ前の命令にジャンプ！)
+R0=R1
+RET
+
+</textarea>
+</div>
+<input id="submit-button" value="asemble" type="button" 
+onclick="asemble();">
+
+<h3>BIN</h3>
+
+<select name="selfmt" id="selfmt" onchange="asemble();">
+				<option value="bas2">bas (bin)</option>
+				<option value="bas16">bas (hex)</option>
+				<option value="bin">binary</option>
+</select>
+　　　　　start address <input name="txtadr" id="txtadr" value="0x700"/>
+<div>
+<textarea id="textarea2" style="width:30em;height:15em;">
+</textarea>
+</div>
+</form>
+</div>
+</body>
+</html>
