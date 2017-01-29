@@ -1,0 +1,12 @@
+CLS
+NEW
+
+?"MJ GET tagiyasoft.blog.jp/invader1.bin"
+
+RUN
+NEW
+
+? "MJ GET tagiyasoft.blog.jp/invader2.bin"
+
+CLS
+RUN
