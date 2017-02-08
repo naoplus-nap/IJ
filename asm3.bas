@@ -17,8 +17,8 @@
 170 lc 0,12:?"ASM=";tick()
 200 'char all screen
 210 clt:j=0
-220 for i=#900 to #BC0
+220 for i=#900 to #BBF
 230 poke i,j
 240 j=j+1:if j>255 j=0
 250 next
-260 lc 0,24:?"bas=";tick()
+260 lc 0,22:?"bas=";tick()
