@@ -15,4 +15,11 @@
 150 [7]=`0100011101110000
 160 A=USR(#800,0)
 170 lc 0,12:?"ASM=";tick()
+200 'char all screen
+210 clt:j=0
+220 for i=#900 to #BE0
+230 poke i,j
+240 j=j+1:if j>255 j=0
+250 next
+260 lc 0,24:?"bas=";tick();"
 
