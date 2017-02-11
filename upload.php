@@ -15,7 +15,7 @@
 */
 
 // Server Name/URI (Except "/upload.php")
-$url = "server.name.dom";
+$url = "naoplus-nao.github.io/IJ";
 
 // Output in the non-MixJuice
 $ua = $_SERVER['HTTP_USER_AGENT'];
